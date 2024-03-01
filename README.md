@@ -52,7 +52,7 @@ Votre contribution à **DynaTaskPro** est la bienvenue ! Si vous souhaitez contr
 5. Ouvrez une Pull Request.
 
 
-## Contact
+## Fondateurs
 
 Fred ABLEFONLIN - Sarah SERHAL - Maké SAGNA
 
