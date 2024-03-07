@@ -6,7 +6,7 @@ public class Employe implements Assignable{
     private String nom;
     private String prenom;
     private String email;
-    
+
     
     private Calendrier calendrier;
     private List<Competence> competences;
@@ -16,6 +16,29 @@ public class Employe implements Assignable{
         this.competences = competences;
     }
 
+    public String getNom() {
+        return this.nom;
+    }
+
+    public String getPrenom() {
+        return this.prenom;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public void setNom(String nom){
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom){
+        this.prenom = prenom;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
     @Override
     public void assignerTache(Tache tache) {
         // Logique d'assignation de tâche
