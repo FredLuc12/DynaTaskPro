@@ -1,5 +1,6 @@
 package com.dynataskpro.Affectation;
 
+import java.util.Calendar;
 import java.util.List;
 
 public class Employe implements Assignable{
@@ -8,10 +9,10 @@ public class Employe implements Assignable{
     private String email;
     
     
-    private Calendrier calendrier;
+    private Calendar calendrier;
     private List<Competence> competences;
 
-    public Employe(Calendrier calendrier, List<Competence> competences) {
+    public Employe(Calendar calendrier, List<Competence> competences) {
         this.calendrier = calendrier;
         this.competences = competences;
     }
