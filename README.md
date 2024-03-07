@@ -1,8 +1,6 @@
 # DynaTaskPro
 Architecture Orientée Objet
 
-Voici un modèle de descriptif pour le fichier README de votre projet **DynaTaskPro**. Ce modèle vise à fournir une vue d'ensemble claire et concise du projet, y compris son objectif, ses fonctionnalités principales, comment l'installer, le démarrer et contribuer.
-
 ---
 
 # DynaTaskPro
