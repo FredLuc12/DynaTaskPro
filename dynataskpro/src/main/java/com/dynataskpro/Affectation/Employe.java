@@ -1,4 +1,12 @@
+package com.dynataskpro.Affectation;
+
+import java.util.List;
+
 public class Employe implements Assignable{
+    private String nom;
+    private String prenom;
+    private String email;
+    
     
     private Calendrier calendrier;
     private List<Competence> competences;
