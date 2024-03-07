@@ -1,4 +1,9 @@
 public interface ServiceExecution {
-    
-    void creerPlanExecution();
+    public void creerPlanExecution();
+
+    public void modifierPlanExecution();
+
+    public void supprimerPlanExecution();
+
+    public void consulterPlanExecution();
 }
