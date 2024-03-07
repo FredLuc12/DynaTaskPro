@@ -41,14 +41,7 @@ public class Client {
     }
 
     public void envoyerDemande(String contenuDemande) {
-        // Logique d'envoi de demande
-        String numeroSuivi = genererNumeroSuivi();
-        String horodatage = genererHorodatage();
-
-        System.out.println("Demande envoyée par : " + prenom + " " + nom);
-        System.out.println("Contenu de la demande : " + contenuDemande);
-        System.out.println("Numéro de suivi : " + numeroSuivi);
-        System.out.println("Horodatage : " + horodatage);
+    
     }
 
 }
