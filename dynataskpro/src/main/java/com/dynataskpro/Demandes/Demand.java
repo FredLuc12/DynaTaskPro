@@ -7,6 +7,7 @@ public class Demand {
     private int numDemande;
     private String nomProjet;
     private String descriptionProjet;
+    
 
     // Constructeur
     public Demand(String nomProjet, String descriptionProjet) {
