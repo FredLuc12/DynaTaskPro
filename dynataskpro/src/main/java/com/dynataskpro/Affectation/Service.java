@@ -1,9 +1,7 @@
 package com.dynataskpro.Affectation;
 
-
-
 public class Service {
-    
+
     private String nomService;
     private int numService;
 
@@ -30,5 +28,8 @@ public class Service {
         this.numService = numService;
     }
 
-}
+    public void estEnvoyéA(String nomService, int numService) {
+        System.out.println("La demande numéro"Le service " + nomService + " a été envoyé au service " + numService);
+    }
 
+}
