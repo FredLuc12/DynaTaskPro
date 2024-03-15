@@ -43,8 +43,7 @@ public class Client {
 
     // Méthodes privées pour la génération de numéro de suivi et d'horodatage
 
-    private String genererNumeroSuivi(int numDemande) {
-        // Logique de génération de numéro de suivi (peut être une séquence unique, etc.)
+    private int genererNumeroSuivi(int numDemande) {
         return numDemande;
     }
 
@@ -57,7 +56,7 @@ public class Client {
 
     public void envoyerDemande(int numDemande, String contenuDemande) {
         // Logique d'envoi de demande
-        String numeroSuivi = genererNumeroSuivi(numDemande);
+        int numeroSuivi = genererNumeroSuivi(numDemande);
         String horodatage = genererHorodatage();
 
         System.out.println("Demande envoyée par : " + prenom + " " + nom);

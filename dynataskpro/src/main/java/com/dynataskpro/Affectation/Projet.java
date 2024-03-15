@@ -1,3 +1,7 @@
+package com.dynataskpro.Affectation;
+
+import java.util.List;
+
 public class Projet {
     
     private List<Tache> listeTaches;
