@@ -29,6 +29,19 @@ public class App
         Availability availabilityService = new AvailabilityServiceImpl(true);
         availabilityService.mettreAJourDisponibilite();
 
+        // Instantiate the AvailabilityServiceImpl class
+        AvailabilityServiceImpl availabilityServic = new AvailabilityServiceImpl(true); // Pass initial availability status
+
+        // Use the mettreAJourDisponibilite method to update availability
+        availabilityService.mettreAJourDisponibilite();
+
+        // Use the isDisponible method to check current availability
+        boolean isAvailable = availabilityServic.isDisponible();
+        System.out.println("Current availability: " + isAvailable);
+
+        // Use the setDisponibilite method to set availability
+        availabilityServic.setDisponibilite(false); // Set availability to false
+
         // Tests
         System.out.println("Nom du client : " + client1.getNom());
         System.out.println("Prénom du client : " + client1.getPrenom());
