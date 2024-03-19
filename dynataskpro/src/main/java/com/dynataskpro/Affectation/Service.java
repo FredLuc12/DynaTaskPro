@@ -1,9 +1,11 @@
+
 package com.dynataskpro.Affectation;
 
 public class Service {
 
     private String nomService;
     private int numService;
+    private int numDemande; 
 
     // Constructeur
     public Service(String nomService, int numService) {
@@ -28,8 +30,15 @@ public class Service {
         this.numService = numService;
     }
 
-    public void estEnvoyéA(String nomService, int numService) {
-        System.out.println("La demande numéro"Le service " + nomService + " a été envoyé au service " + numService);
+    private int genererNumeroSuivi(int numDemande) {
+        return numDemande;
+    }
+
+    public void estEnvoyéA(String nomService, int numDemande,int numService) {
+
+        // Logique d'envoi de demande
+        int numeroService = genererNumeroSuivi(numDemande);
+        System.out.println ( "La demande: " + numDemande + "a été envoyé à: " + nomService + "dont le numéro est: " + numService);
     }
 
 }

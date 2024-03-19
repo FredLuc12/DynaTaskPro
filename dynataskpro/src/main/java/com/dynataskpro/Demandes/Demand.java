@@ -7,6 +7,7 @@ public class Demand {
     private int numDemande;
     private String nomProjet;
     private String descriptionProjet;
+    private boolean demandeRejetee;
     
 
     // Constructeur
@@ -29,6 +30,14 @@ public class Demand {
     // Méthode pour obtenir la description du projet
     public String getDescriptionProjet() {
         return descriptionProjet;
+    }
+
+    public boolean getDemandeRejetee(){
+        return demandeRejetee;
+    }
+
+    public void setDemandeRejetee(boolean demandeRejetee){
+        this.demandeRejetee = demandeRejetee;
     }
     
 }
