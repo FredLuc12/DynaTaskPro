@@ -21,5 +21,6 @@ public class VerifTypeProjServiceImpl implements Verifiable {
     public void effectuerVerification() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'effectuerVerification'");
+        
     }
 }

@@ -7,6 +7,7 @@ public class Employe implements Assignable{
     private String nom;
     private String prenom;
     private String email;
+    private List<Tache> tachesAssignes;
 
     
     private Calendar calendrier;
@@ -42,6 +43,7 @@ public class Employe implements Assignable{
     }
     @Override
     public void assignerTache(Tache tache) {
-        // Logique d'assignation de tâche
+        tachesAssignes.add(tache);
+
     }
 }
