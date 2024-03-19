@@ -1,4 +1,10 @@
+package com.dynataskpro.PlanVerifTypeProjet;
+
 import java.util.List;
+
+import com.dynataskpro.Demandes.Demand;
+import com.dynataskpro.QualifProjetService.Qualifiable;
+import com.dynataskpro.VerifTypeProjService.Verifiable;
 
 public class Projet implements Verifiable, Qualifiable{
     
@@ -18,5 +24,11 @@ public class Projet implements Verifiable, Qualifiable{
     @Override
     public void effectuerVerification() {
         // Logique d'effectuation de la vérification
+    }
+
+    @Override
+    public void verifieProjet(Demand demande) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'verifieProjet'");
     }
 }

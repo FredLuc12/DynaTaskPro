@@ -1,3 +1,7 @@
+package com.dynataskpro.PlanExecService;
+
+import com.dynataskpro.QualifProjetService.Qualifiable;
+import com.dynataskpro.VerifTypeProjService.Verifiable;
 
 public abstract class Service implements ServiceExecution, Verifiable, Qualifiable {
     protected String qualification;
