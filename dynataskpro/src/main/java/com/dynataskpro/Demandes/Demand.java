@@ -7,14 +7,16 @@ public class Demand {
     private int numDemande;
     private String nomProjet;
     private String descriptionProjet;
+    private String serviceConcerne;
     private boolean demandeRejetee;
     
 
     // Constructeur
-    public Demand(String nomProjet, String descriptionProjet) {
+    public Demand(String nomProjet, String descriptionProjet, String ServiceConcerne) {
         this.numDemande = ++compteurDemandes;
         this.nomProjet = nomProjet;
         this.descriptionProjet = descriptionProjet;
+        this.serviceConcerne = serviceConcerne;
     }
 
     // Méthode pour obtenir le numéro de demande
@@ -30,6 +32,10 @@ public class Demand {
     // Méthode pour obtenir la description du projet
     public String getDescriptionProjet() {
         return descriptionProjet;
+    }
+
+    public String getServiceConcerne() {
+        return serviceConcerne;
     }
 
     public boolean getDemandeRejetee(){

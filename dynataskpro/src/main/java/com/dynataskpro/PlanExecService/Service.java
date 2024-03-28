@@ -6,14 +6,20 @@ import com.dynataskpro.VerifTypeProjService.Verifiable;
 public abstract class Service implements ServiceExecution, Verifiable, Qualifiable {
     protected String qualification;
     protected String verification;
+    
+    public abstract void evaluerQualification();
 
-    @Override
-    public void evaluerQualification() {
-        // Logique d'évaluation de la qualification pour les services généraux
-    }
+    public abstract void effectuerVerification();
 
-    @Override
-    public void effectuerVerification() {
-        // Logique d'effectuation de la vérification pour les services généraux
-    }
+    public String getServiceName() {
+        if (this.getClass().equals(ServiceLogiciel.class)) {
+            return getServiceName();
+        } 
+        if (this.getClass().equals(ServiceConstruction.class)) {
+            return getServiceName();
+        } else {
+            return "Le service concerné n'est pas affecté";
+        }
+    }    
+    
 }
